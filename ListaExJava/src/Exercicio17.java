@@ -1,3 +1,6 @@
+/*17. Escreva um programa que leia um valor inteiro correspondente a uma quantidade de segundos, convertendo o valor dado
+em horas corridas sabendo que 3600 segundos equivalem a 1 hora, exibindo os valores dado e convertido. Caso o
+usuário forneça um valor negativo, deve ser exibida uma mensagem e a operação de conversão não deve ser efetuada. */
 
 import java.util.Scanner;
 
@@ -6,13 +9,15 @@ public class Exercicio17 {
 	public void run() {
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Digite um valor para A: ");
-		float a = input.nextFloat();
-		System.out.print("Digite um valor para B: ");
-		float b = input.nextFloat();
+		System.out.println("Digite o valor: ");
+		float seg = input.nextFloat();
 		
-		System.out.println(" a) A Ã© igual a zero? " + ((a == 0) ? "verdadeiro" : "falso"));
-		System.out.println(" b) B Ã© menor que zero?"  + ((b > 0) ? "verdadeiro" : "falso"));
-		System.out.println(" c) A OU B sÃ£o maiores do que zero?" + (((a >0)||(b >0)) ? "verdadeiro" : "falso"));
+		float hora = seg/3600;
+		
+		System.out.println("total de "+hora+" Horas");
+
+		
+		
+		
 	}
 }
