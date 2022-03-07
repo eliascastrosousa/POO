@@ -1,3 +1,6 @@
+/*16. Preparar um programa para ler as medidas da base e da altura de um triângulo, calculando e imprimindo sua área,
+sabendo que o cálculo da área é dado por:
+area = (base*altura)/2*/
 
 import java.util.Scanner;
 
@@ -6,42 +9,17 @@ public class Exercicio16 {
 	public void run() {
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Digite um valor para A: ");
-		float a = input.nextFloat();
-		System.out.print("Digite um valor para B: ");
-		float b = input.nextFloat();
+		System.out.print("Digite a base: ");
+		float base = input.nextFloat();
 		
-		if (a >0) {
-			System.out.println(" (a) A Ã© maior que zero?  verdadeiro");
-		}else{
-			System.out.println(" (a) A Ã© maior que zero?  falso");
-		}
+		System.out.print("Digite a altura: ");
+		float altura = input.nextFloat();
 		
-		if (b >0) {
-			System.out.println(" (b) B Ã© maior que zero?  verdadeiro");
-		}else{
-			System.out.println(" (b) B Ã© maior que zero?  falso");
-		}
+		float area = (base*altura)/2;
 		
-		if ( (a >0) && (b > 0)) {
-			System.out.println(" (c) A E B sÃ£o maiores do que zero?  verdadeiro");
-		}else{
-			System.out.println(" (c) A E B sÃ£o maiores do que zero?  falso");
-		}
-	}
-	
-	
-	public void run02() {
-		Scanner input = new Scanner(System.in);
-		
-		System.out.print("Digite um valor para A: ");
-		float a = input.nextFloat();
-		System.out.print("Digite um valor para B: ");
-		float b = input.nextFloat();
-		
-		System.out.println(" (a) A Ã© maior que zero? " + ((a >0) ? "verdadeiro" : "falso"));
-		System.out.println(" (b) B Ã© maior que zero?"  + ((b >0) ? "verdadeiro" : "falso"));
-		System.out.println(" (c) A E B sÃ£o maiores do que zero?" + (((a >0)&&(b >0)) ? "verdadeiro" : "falso"));
+		System.out.print("Area do Triangulo igual a: "+area);
+
 		
 	}
+	
 }
