@@ -7,7 +7,7 @@ public class MainListaEx {
 		int opcao =0;
 		do {
 				Scanner input = new Scanner(System.in);
-				System.out.print("Qual exercício você deseja rodar 1...30 ou \n[0] Para Sair: ");
+				System.out.print("\nQual exercício você deseja rodar 1...30 ou \n[0] Para Sair: ");
 				opcao = input.nextInt();
 
 				switch (opcao) {
@@ -27,7 +27,10 @@ public class MainListaEx {
 						Exercicio04 exercicio04 = new Exercicio04();
 						exercicio04.run();
 					} break;
-					
+					case 5: {
+						Exercicio05 exercicio05 = new Exercicio05();
+						exercicio05.run();
+					} break;
 						
 				}		
 			}while(opcao != 0);

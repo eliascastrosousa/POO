@@ -1,7 +1,7 @@
 
 /*
-3. Leia um número qualquer fornecido pelo usuário. Determine se o número é maior do que 50, imprimindo uma mensagem
-indicando tal fato. 
+4. Leia um número qualquer fornecido pelo usuário. Determine se o número é maior do que 100, imprimindo uma
+mensagem indicando que o "valor é maior que 100" ou uma mensagem indicando que o "valor é menor ou igual a 100". 
  */
 
 import java.util.Scanner;
@@ -12,10 +12,10 @@ public class Exercicio04 {
 		Scanner input = new Scanner(System.in);		
 		System.out.println("Digite um numero: ");
 		int num = input.nextInt();
-		if(num >= 50) {
-			System.out.println("O Valor digitado : "+ num + " eh maior ou igual a 50!");
+		if(num > 100) {
+			System.out.println("O valor digitado "+ num + " é igual a 100!");
 		}else {
-			System.out.println("Valor digitado : "+ num + " eh menor que 50!");
+			System.out.println("O valor digitado "+ num + " é menor ou igual a 100!");
 		}
 	}
 
