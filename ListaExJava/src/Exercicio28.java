@@ -1,3 +1,5 @@
+/*28. Faça um programa que exiba a tabela verdade da operação E-Lógico para todas as combinações de três variáveis lógicas
+A, B e C. Os resultados da tabela devem ser exibidos como F ou V.*/
 
 import java.util.Scanner;
 
@@ -6,20 +8,13 @@ public class Exercicio28 {
 	public void run() {
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Digite um valor para A: ");
-		int a = input.nextInt();
-		System.out.print("Digite um valor para B: ");
-		int b = input.nextInt();
-		System.out.print("Digite um valor para C: ");
-		int c = input.nextInt();
-		
-		int maior = ((int) (Math.pow(2, 32)/2)*(-1) );// menor valor possÃ­vel de int
-		
-		maior = (((a>b) && (a>c)) ? a : maior );
-		maior = (((b>a) && (b>c)) ? b : maior );
-		maior = (((c>a) && (c>b)) ? c : maior );
-		
-		System.out.print( " O maior valor digitado foi " + maior );
+		for (int a= 0; a<=1; a++){
+			for (int b= 0; b<=1; b++){
+				for (int c= 0; c<=1; c++){
+					System.out.print(a + " E "+ c + " E "+ c + " = " + (a==1 && b==1 && c==1) != null?"verdadeiro":"Falso");
+				}
+			}
+		}
 	}
 
 }
