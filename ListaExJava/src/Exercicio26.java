@@ -1,34 +1,21 @@
+/*26. Escreva um programa que calcule a soma de N n˙meros quaisquer fornecidos pelo usu·rio. O programa deve parar de ler
+e, portanto somar os valores quando for introduzido o n˙mero 0 (zero). */
 
 import java.util.Scanner;
 
 public class Exercicio26 {
-
 	public void run() {
+		int soma =0;
+		int valor;
+		do {
 		Scanner input = new Scanner(System.in);
+		System.out.print("Digite um valor inteiro ou [0] para finalizar: ");
+		valor = input.nextInt();
+		soma = soma+valor;
 		
-		System.out.print("Digite um valor para A: ");
-		float a = input.nextFloat();
-		System.out.print("Digite um valor para B: ");
-		float b = input.nextFloat();
+		}while(valor != 0);
+		System.out.println("o resultado È: "+soma);
+
 		
-		if (a >0) {
-			System.out.println(" (a) A √© maior que zero?  verdadeiro");
-		}else{
-			System.out.println(" (a) A √© maior que zero?  falso");
-		}
-		
-		if (b >0) {
-			System.out.println(" (b) B √© maior que zero?  verdadeiro");
-		}else{
-			System.out.println(" (b) B √© maior que zero?  falso");
-		}
-		
-		if ( (a >0) && (b > 0)) {
-			System.out.println(" (c) A E B s√£o maiores do que zero?  verdadeiro");
-		}else{
-			System.out.println(" (c) A E B s√£o maiores do que zero?  falso");
-		}
 	}
-	
-	
 }

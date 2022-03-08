@@ -1,18 +1,18 @@
+/*27. Calcule a m�dia de Notas de alunos. O programa deve parar de ler valores quando for fornecido um valor negativo como
+nota. */
 
 import java.util.Scanner;
 
 public class Exercicio27 {
 	
 	public void run() {
+		float a;
 		Scanner input = new Scanner(System.in);
+		do {
+		System.out.print("Digite uma nota do aluno ou -1 para sair ");
+		a = input.nextFloat();
+		}while(a != -1);
 		
-		System.out.print("Digite um valor para A: ");
-		float a = input.nextFloat();
-		System.out.print("Digite um valor para B: ");
-		float b = input.nextFloat();
 		
-		System.out.println(" a) A é igual a zero? " + ((a == 0) ? "verdadeiro" : "falso"));
-		System.out.println(" b) B é menor que zero?"  + ((b > 0) ? "verdadeiro" : "falso"));
-		System.out.println(" c) A OU B são maiores do que zero?" + (((a >0)||(b >0)) ? "verdadeiro" : "falso"));
 	}
 }
