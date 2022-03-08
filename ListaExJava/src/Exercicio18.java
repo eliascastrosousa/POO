@@ -1,25 +1,31 @@
+/*18. Escreva um programa que leia um número inteiro entre 0 e 100 e o exiba por extenso, por exemplos: 16 -> "dezesseis",
+34 -> "trinta e quatro", etc.. */
 
 import java.util.Scanner;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Iterator;
+
 
 public class Exercicio18 {
+	
+	 String Numeros[][] = {  
+	          {"Zero", "Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez",  
+	          "Onze", "Doze", "Treze", "Quatorze", "Quinze", "Desesseis", "Desessete", "Dezoito", "Desenove"},  
+	          {"Vinte", "Trinta", "Quarenta", "Cinquenta", "Sessenta", "Setenta", "Oitenta", "Noventa"},  
+	          {"Cem", "Cento", "Duzentos", "Trezentos", "Quatrocentos", "Quinhentos", "Seiscentos",  
+	          "Setecentos", "Oitocentos", "Novecentos"}  
+	          };  
 
 	public void run() {
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Digite um valor para A: ");
+		System.out.print("Digite um número inteiro entre 0 e 100: ");
 		int a = input.nextInt();
-		System.out.print("Digite um valor para B: ");
-		int b = input.nextInt();
-		System.out.print("Digite um valor para C: ");
-		int c = input.nextInt();
+				
 		
-		int maior = ((int) (Math.pow(2, 32)/2)*(-1) );// menor valor possÃ­vel de int
 		
-		maior = (((a>b) && (a>c)) ? a : maior );
-		maior = (((b>a) && (b>c)) ? b : maior );
-		maior = (((c>a) && (c>b)) ? c : maior );
-		
-		System.out.print( " O maior valor digitado foi " + maior );
 	}
 
 }

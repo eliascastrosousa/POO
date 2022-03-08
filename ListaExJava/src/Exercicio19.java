@@ -1,4 +1,5 @@
-
+/*19. Escreva um programa que leia um número real entre 0.00 e 100.00 e o exiba por extenso como se fosse uma quantia em
+dinheiro, por exemplo: 1.00 -> "um real", .12.73 -> "doze reais e setenta e três centavos".  */
 
 import java.util.Scanner;
 

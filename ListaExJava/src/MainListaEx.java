@@ -89,8 +89,8 @@ public class MainListaEx {
 						exercicio19.run();
 					}break;
 					case 20 :{
-						Exercicio11 exercicio11 = new Exercicio11();
-						exercicio11.run();
+						Exercicio20 exercicio20 = new Exercicio20();
+						exercicio20.run();
 					}break;
 					case 21 :{
 						Exercicio21 exercicio21 = new Exercicio21();
