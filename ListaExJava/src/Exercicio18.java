@@ -13,7 +13,7 @@ public class Exercicio18 {
 	int aux, aux2;
 	
 	 String Numeros[] = {"Zero", "Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez",  
-	          				"Onze", "Doze", "Treze", "Quatorze", "Quinze", "Desesseis", "Desessete", "Dezoito", "Desenove"};
+	          				"Onze", "Doze", "Treze", "Quatorze", "Quinze", "Desesseis", "Desessete", "Dezoito", "Desenove", };
 	 
 	 String Dezenas[]= {"Dez","Vinte", "Trinta", "Quarenta", "Cinquenta", "Sessenta", "Setenta", "Oitenta", "Noventa"};
 	 
@@ -40,7 +40,7 @@ public class Exercicio18 {
 	        for(int i = 0; i < digits1.length; i++) {
 	            
 	        	System.out.println(digits1[i]);
-	        	
+	        	aux2 = i;
 	            System.out.println(Dezenas[i]);	
 	            
 	            
