@@ -8,6 +8,9 @@ public class Exercicio27 {
 	public void run() {
 		float n=0, media=0, notas=0,c=0;
 
+		System.out.println("\n Calcule a média de Notas de alunos. "
+				+ "O programa deve parar de ler valores quando for fornecido um valor negativo como nota. \n");
+		
 		Scanner input = new Scanner(System.in);
 		
 		do {

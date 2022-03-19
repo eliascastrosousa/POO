@@ -1,10 +1,10 @@
 /*
- Escreva um programa que leia dois valores, os quais denominaremos A e B, fornecidos pelo usuário, exibindo respostas
+ Escreva um programa que leia dois valores, os quais denominaremos A e B, fornecidos pelo usuário, \n exibindo respostas
 F ou V para as seguintes questões:
-(a) A é maior que zero?
-(b) B é maior que zero;
-(c) A E B são maiores do que zero?
-Use operadores lógicos para formular as expressões necessárias a avaliação dos valores. 
+\n (a) A é maior que zero?
+\n (b) B é maior que zero;
+\n (c) A E B são maiores do que zero?
+\n Use operadores lógicos para formular as expressões necessárias a avaliação dos valores. 
  
  */
 
@@ -13,8 +13,15 @@ import java.util.Scanner;
 public class Exercicio06 {	
 	
 	public void run() {
-		Scanner input = new Scanner(System.in);
 		
+		System.out.println("\n Escreva um programa que leia dois valores, os quais denominaremos A e B, fornecidos pelo usuário, "
+				+ "\n exibindo respostas F ou V para as seguintes questões:"
+				+ "\n (a) A é maior que zero?\n"
+				+ "\n (b) B é maior que zero;\n"
+				+ "\n (c) A E B são maiores do que zero?\n"
+				+ "\n Use operadores lógicos para formular as expressões necessárias a avaliação dos valores.  \n ");
+		
+		Scanner input = new Scanner(System.in);
 		System.out.print("Digite um valor para A: ");
 		float a = input.nextFloat();
 		System.out.print("Digite um valor para B: ");

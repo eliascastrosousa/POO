@@ -7,6 +7,9 @@ public class Exercicio21 {
 	
 	public void run() {
 		
+		System.out.println("\n Faça um algoritmo que, lendo 3 números correspondentes aos coeficientes a, b, e c de uma equação do 2º grau, calcule\n"
+				+ "seu DELTA e também as raízes desta equação, imprimindo seus valores. \n");
+		
 		Scanner input = new Scanner(System.in);
 		System.out.print("Digite um valor inteiro: ");
 		int A = input.nextInt();

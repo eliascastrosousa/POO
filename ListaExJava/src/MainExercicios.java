@@ -1,7 +1,6 @@
-
 import java.util.Scanner;
 
-public class MainListaEx {
+public class MainExercicios {
 
 	public static void main(String[] args) {
 		int opcao =0;

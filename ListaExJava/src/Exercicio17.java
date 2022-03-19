@@ -7,13 +7,16 @@ import java.util.Scanner;
 public class Exercicio17 {
 	
 	public void run() {
-		Scanner input = new Scanner(System.in);
 		
+		System.out.println("\n Escreva um programa que leia um valor inteiro correspondente a uma quantidade de segundos,"
+				+ " convertendo o valor dado em horas corridas, exibindo os valores dado e convertido. "
+				+ "Caso o usuário forneça um valor negativo, deve ser exibida uma mensagem e a operação de conversão não deve ser efetuada. \n");
+		
+		
+		Scanner input = new Scanner(System.in);
 		System.out.println("Digite o valor: ");
 		float seg = input.nextFloat();
-		
 		float hora = seg/3600;
-		
 		System.out.println("total de "+hora+" Horas");
 
 		

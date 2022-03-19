@@ -9,6 +9,10 @@ import java.util.Scanner;
 
 public class Exercicio13 {
 	public void run() {
+		
+		System.out.println("\n Dados 3 valores reais representando os lados de um possível triângulo, verifique se os mesmos formam um triângulo."
+				+ " Caso seja formado um triângulo, descubra também se este triângulo é escaleno, isósceles ou eqüilátero\n");
+		
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Digite o valor A: ");

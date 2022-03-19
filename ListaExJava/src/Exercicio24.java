@@ -1,13 +1,14 @@
-/*24. Implementar três programas para exibir a tabuada de um número inteiro entre 1 e 20 dado pelo usuário.
-a) Usando enquanto (while)
-b) Usando faça-enquanto (do-while)
-c) Usando para (for)
- Obs. Caso o valor dado seja inválido o programa deve apenas exibir uma mensagem de aviso. */
-
 import java.util.Scanner;
 
 public class Exercicio24 {
 	public void run() {
+		
+		System.out.println("\n Implementar três programas para exibir a tabuada de um número inteiro entre 1 e 20 dado pelo usuário.\n"
+				+ "a) Usando enquanto (while)\n"
+				+ "b) Usando faça-enquanto (do-while)\n"
+				+ "c) Usando para (for)\n"
+				+ " Obs. Caso o valor dado seja inválido o programa deve apenas exibir uma mensagem de aviso. \n");
+		
 		Scanner input = new Scanner(System.in);
 		System.out.print("Digite um numero inteiro entre 1 e 20: ");
 		int num = input.nextInt();

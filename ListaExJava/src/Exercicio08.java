@@ -6,8 +6,9 @@ import java.util.Scanner;
 public class Exercicio08 {
 
 	public void run() {
-		Scanner input = new Scanner(System.in);
 		
+		System.out.println("\n Leia três números inteiros fornecidos pelo usuário. Descubra qual deles é o maior de todos, imprimindo seu valor. \n ");
+		Scanner input = new Scanner(System.in);
 		System.out.print("Digite um valor para A: ");
 		int a = input.nextInt();
 		System.out.print("Digite um valor para B: ");

@@ -7,6 +7,9 @@ import java.util.Scanner;
 public class Exercicio16 {
 
 	public void run() {
+		
+		System.out.println("\n Preparar um programa para ler as medidas da base e da altura de um triângulo, calculando e imprimindo sua área\n");
+		
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Digite a base: ");

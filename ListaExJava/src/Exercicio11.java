@@ -6,6 +6,10 @@ import java.util.Scanner;
 public class Exercicio11 {
 		public void run() {
 			
+			
+		System.out.println("\n Escreva um programa que leia dois números inteiros A e B quaisquer indicando se A é múltiplo de B ou se B é múltiplo\n"
+				+ "de A. \n");
+		
 		Scanner input = new Scanner(System.in);		
 		System.out.println("Digite o numero A: ");
 		int numA = input.nextInt();

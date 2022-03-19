@@ -6,8 +6,9 @@ import java.util.Scanner;
 public class Exercicio10 {
 
 	public void run() {
-		Scanner input = new Scanner(System.in);
 		
+		System.out.println("\n Leia três números quaisquer, imprimindo-os em ordem crescente.  \n ");
+		Scanner input = new Scanner(System.in);
 		System.out.print("Digite um valor para A: ");
 		int a = input.nextInt();
 		System.out.print("Digite um valor para B: ");

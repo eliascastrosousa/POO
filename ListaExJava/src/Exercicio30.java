@@ -1,42 +1,36 @@
-
 import java.util.Scanner;
 
 public class Exercicio30 {
 
 	public void run() {
-		/* 10. Leia três números quaisquer, imprimindo-os em ordem crescente. */
+		
+		System.out.println("\n Escreva um programa que calcule o valor de y = f(x) = a*x + b \n"
+				+ "		 em um intervalo de valores de x, sendo dados pelo usu�rio \n"
+				+ "		 os coeficientes a e b, \n"
+				+ "		 bem como os valores do limite inferior e superior do intervalo de x \n"
+				+ "		 bem como o valor do incremento de x. \n"
+				+ "		 O programa deve exibir resultados como um tabela onde constam os valores de x e y=f(x) lado a lado. \n");
+		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Digite um valor para A: ");
-		int a = input.nextInt();
-		System.out.print("Digite um valor para B: ");
-		int b = input.nextInt();
-		System.out.print("Digite um valor para C: ");
-		int c = input.nextInt();
+		System.out.print("Digite um valor para a: ");
+		int a = input.nextInt() ;
 		
-		if ( (a>b) && (b>c)) { 
-			System.out.print("Ordem: "+ a + "> " + b + ">" + c);
-		} else {
-			if ( (a>c) && (c>b)) { 
-				System.out.print("Ordem: "+ a + "> " + c + ">" + b);
-			} else {
-				if ( (b>a) && (a>c)) { 
-					System.out.print("Ordem: "+ b + "> " + a + ">" + c);
-				} else {
-					if ( (b>c) && (c>a)) { 
-						System.out.print("Ordem: "+ b + "> " + c + ">" + a);
-					} else {
-						if ( (c>a) && (a>b)) { 
-							System.out.print("Ordem: "+ c + "> " + a + ">" + b);
-						} else {
-							// só sobrou ( (c>b) && (b>a))
-							System.out.print("Ordem: "+ c + "> " + b + ">" + a);
-						}
-					}	
-				}
-			}	
+		System.out.print("Digite um valor para b: ");
+		int b = input.nextInt() ;
+		
+		System.out.print("Digite um valor minimo para x: ");
+		int minX = input.nextInt() ;
+		
+		System.out.print("Digite um valor maximo para x: ");
+		int maxX = input.nextInt() ;
+		
+		System.out.print("Digite um valor para o incremento de x: ");
+		int incX = input.nextInt();
+		
+		for ( int x = minX; x <= maxX; x += incX ) {
+			System.out.println( " y = f(x) = a*x + b = "+ a + "*" + x + " + " + b + " = " + (a*x+b));
 		}
-		
 		
 	}
 

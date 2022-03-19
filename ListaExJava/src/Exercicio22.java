@@ -11,10 +11,7 @@ import java.util.Scanner;
 public class Exercicio22 {
 
 	public void run() {
-		Scanner input = new Scanner(System.in);
-		System.out.print("Digite um valor real: ");
-		float valor = input.nextFloat();
-		System.out.println("O valor lido foi: " + valor);		
+		System.out.println("\nA operaçao nao pode ser efetuada!\n");	
 	}
 	
 }

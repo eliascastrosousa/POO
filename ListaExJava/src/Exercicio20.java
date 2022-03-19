@@ -6,8 +6,12 @@ uma mensagem e a operação de conversão não deve ser efetuada.  */
 
 public class Exercicio20 {
 		public void run() {
-			Scanner input = new Scanner(System.in);
 			
+			System.out.println("\n Escreva um programa que leia um valor real correspondente a uma medida em metros, "
+					+ "convertendo o valor dado em pés, exibindo os valores dado e convertido. "
+					+ "Caso o usuário forneça um valor negativo, deve ser exibida uma mensagem e a operação de conversão não deve ser efetuada. \n");
+			
+			Scanner input = new Scanner(System.in);
 			System.out.print("Digite o valor: ");
 			float a = input.nextFloat();
 			

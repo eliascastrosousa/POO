@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class Exercicio03 {
 		public void run() {
 			
+		System.out.println("\n Leia um número qualquer fornecido pelo usuário. Determine se o número é maior do que 50, imprimindo uma mensagem\n"
+				+ "indicando tal fato.  \n ");
 		Scanner input = new Scanner(System.in);		
 		System.out.println("Digite um numero: ");
 		int num = input.nextInt();
