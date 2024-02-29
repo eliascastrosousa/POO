@@ -4,6 +4,7 @@ public class Pessoa {
 	
 	String name; 
 	int idade; 
+	char genero;
 	double altura;
 
 	public Pessoa(String name, int idade, double altura) {
@@ -15,6 +16,21 @@ public class Pessoa {
 	public Pessoa(String name, int idade) {
 		this.name = name;
 		this.idade = idade;
+	}
+	
+	
+	public char getGenero() {
+		return genero;
+	}
+
+	public void setGenero(char genero) {
+		this.genero = genero;
+	}
+
+	public Pessoa(char genero, double altura) {
+		super();
+		this.genero = genero;
+		this.altura = altura;
 	}
 
 	public String getName() {
