@@ -11,6 +11,11 @@ public class Pessoa {
 		this.idade = idade;
 		this.altura = altura;
 	}
+	
+	public Pessoa(String name, int idade) {
+		this.name = name;
+		this.idade = idade;
+	}
 
 	public String getName() {
 		return name;

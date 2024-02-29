@@ -3,10 +3,10 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-
-public class NumerosPares {
+public class MediaPares {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
@@ -14,22 +14,28 @@ public class NumerosPares {
 		System.out.println("Digite a quantidade de numeros: ");
 		int n = sc.nextInt();
 		
-		int[] vetor = new int[n];
+		double[] vetor = new double[n];
+		
+		double pares = 0;
+		int qtd = 0;
 		
 		System.out.println("Digite os numeros: ");
 		for (int i = 0; i < vetor.length; i++) {
 			vetor[i] = sc.nextInt();
-		}
-		int qtd = 0;
-		System.out.println("NUMEROS PARES: ");
-		for (int i = 0; i < vetor.length; i++) {
-			if (vetor[i] % 2 == 0) {
-				System.out.printf("%d ", vetor[i]);
-				qtd++;
+			if (vetor[i] % 2 == 0 ) {
+				pares += vetor[i];
+				qtd = i;
 			}
 		}
-		System.out.printf("\nQUANTIDADE DE PARES = %d", qtd);
-
+		double mediaPares = pares / qtd;
+		
+		if (qtd == 0) {
+			System.out.println("NENHUM NUMERO PAR ");
+		} else {
+			System.out.printf("MEDIA DOS PARES = %.2f", mediaPares);
+		}
+		
+		
 		sc.close();
 	}
 

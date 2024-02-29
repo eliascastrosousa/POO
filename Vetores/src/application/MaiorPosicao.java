@@ -3,10 +3,10 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-
-public class NumerosPares {
+public class MaiorPosicao {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
@@ -15,21 +15,21 @@ public class NumerosPares {
 		int n = sc.nextInt();
 		
 		int[] vetor = new int[n];
+		int maior = 0;
+		int posicao = 0;
 		
 		System.out.println("Digite os numeros: ");
 		for (int i = 0; i < vetor.length; i++) {
 			vetor[i] = sc.nextInt();
-		}
-		int qtd = 0;
-		System.out.println("NUMEROS PARES: ");
-		for (int i = 0; i < vetor.length; i++) {
-			if (vetor[i] % 2 == 0) {
-				System.out.printf("%d ", vetor[i]);
-				qtd++;
+			if (vetor[i] > maior ) {
+				maior = vetor[i];
+				posicao = i;
 			}
 		}
-		System.out.printf("\nQUANTIDADE DE PARES = %d", qtd);
-
+		
+		System.out.println("MAIOR VALOR = " + maior);
+		System.out.println("POSICAO DO MAIOR VALOR = " + posicao);
+		
 		sc.close();
 	}
 
