@@ -2,11 +2,29 @@ package entities;
 
 public class Aluno {
 	String nome;
+	String email;
 	double nota1;
 	double nota2;
 	
 	
 	
+	public Aluno(String nome, String email) {
+		super();
+		this.nome = nome;
+		this.email = email;
+	}
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
 	public Aluno(String nome, double nota1, double nota2) {
 		super();
 		this.nome = nome;
@@ -33,6 +51,13 @@ public class Aluno {
 	public void setNota2(double nota2) {
 		this.nota2 = nota2;
 	}
+
+
+	@Override
+	public String toString() {
+		return nome + ", " + email;
+	}
+	
 	
 	
 }
